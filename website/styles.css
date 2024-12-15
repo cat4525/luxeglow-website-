@@ -1,0 +1,273 @@
+/* styles.css */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fffdf3; /* Light cream background */
+    color: #333;
+    line-height: 1.8;
+}
+
+/* Header Section */
+header {
+    background: linear-gradient(to right, #fffdf3, #f9f1d4);
+    padding: 30px;
+    text-align: center;
+    border-bottom: 3px solid #d4af37;
+}
+header h1 {
+    font-family: 'Playfair Display', serif; /* Luxurious serif font */
+    font-size: 3rem;
+    color: #d4af37;
+    margin: 0;
+}
+header p {
+    font-size: 1.5rem;
+    color: #555;
+    margin-top: 10px;
+}
+
+/* Navigation Menu */
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin: 10px 0 0;
+}
+nav ul li {
+    margin: 0 20px;
+}
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+nav ul li a:hover {
+    color: #d4af37;
+}
+nav ul li a.active {
+    color: #d4af37;
+    font-weight: bold;
+    border-bottom: 3px solid #d4af37;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(to right, #fffdf3, #f9f1d4);
+    text-align: center;
+    padding: 70px 20px;
+}
+.hero h2 {
+    font-size: 2.5rem;
+    color: #d4af37;
+    margin-bottom: 20px;
+}
+.hero p {
+    font-size: 1.3rem;
+    color: #555;
+}
+.hero .button {
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 15px 30px;
+    text-decoration: none;
+    color: white;
+    background: linear-gradient(to right, #d4af37, #f1d69e); /* Shiny gold gradient */
+    border: none;
+    border-radius: 25px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.hero .button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Section Headings */
+.products h2, .about h2, .message h2, .eco-friendly h2, .contact h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    color: #d4af37;
+    margin-bottom: 30px;
+}
+
+/* Products and About Sections */
+.products, .about, .message, .eco-friendly, .contact {
+    padding: 60px 20px;
+    text-align: center;
+}
+.products img, .message img {
+    width: 100%;
+    max-width: 350px;
+    margin: 20px auto;
+    border: 5px solid #d4af37; /* Gold border */
+    border-radius: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.products img:hover, .message img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Buttons */
+.button {
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 12px 25px;
+    text-decoration: none;
+    color: white;
+    background: linear-gradient(to right, #d4af37, #f1d69e); /* Shiny gold gradient */
+    border: none;
+    border-radius: 25px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Embedded Video (YouTube) */
+iframe {
+    width: 90%;
+    max-width: 900px;
+    height: 450px;
+    margin: 20px auto;
+    border: 3px solid #d4af37;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Bubble Section (Why Choose LuxeGlow?) */
+.eco-friendly {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #fffdf3;
+}
+.eco-friendly h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    color: #d4af37;
+    margin-bottom: 40px;
+}
+.bubbles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+.bubble {
+    background-color: white;
+    color: #d4af37;
+    border: 2px solid #d4af37;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.bubble:hover {
+    transform: scale(1.1);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Design for Bubbles */
+@media (max-width: 768px) {
+    .bubble {
+        width: 120px;
+        height: 120px;
+        font-size: 1rem;
+    }
+    .eco-friendly h2 {
+        font-size: 2rem;
+    }
+}
+
+/* Form Styling */
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 15px;
+    background-color: #f9f9f9;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+form input, form textarea {
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+form button {
+    font-size: 1.3rem;
+    font-weight: bold;
+    padding: 15px 30px;
+    text-decoration: none;
+    color: white;
+    background: linear-gradient(to right, #d4af37, #f1d69e);
+    border: none;
+    border-radius: 25px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+form button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #fffdf3;
+    color: #555;
+    border-top: 3px solid #d4af37;
+}
+
+/* Light/Dark Mode Styling */
+body.dark-mode {
+    background-color: #333;
+    color: #fff;
+}
+body.dark-mode header,
+body.dark-mode footer {
+    background-color: #444;
+    color: #fff;
+}
+body.dark-mode .bubble {
+    background-color: #444;
+    color: #fff;
+    border: 2px solid #999;
+}
+body.dark-mode .button {
+    background: linear-gradient(to right, #555, #777);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    .hero h2 {
+        font-size: 2rem;
+    }
+    iframe {
+        width: 95%;
+        height: 300px;
+    }
+    form {
+        padding: 15px;
+    }
+}
